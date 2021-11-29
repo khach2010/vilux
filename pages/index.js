@@ -45,7 +45,7 @@ export async function getStaticProps() {
   const propertyForRent = await fetchApi(
     `${baseUrl}/properties/list?locationExternalIDs=5002&purpose=for-rent&hitsPerPage=6`
   )
-  console.log(propertyForRent)
+
   return {
     props: {
       propertiesForSale: propertyForSale?.hits,
